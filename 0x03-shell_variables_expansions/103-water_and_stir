@@ -1,2 +1,2 @@
 #!/bin/bash
-python -c "print(int('$WATER', 36) + int('$STIR', 36))"
+echo $((36#${WATER} + 36#${STIR})) | tr '0-9a-z' 'a-z0-9'
