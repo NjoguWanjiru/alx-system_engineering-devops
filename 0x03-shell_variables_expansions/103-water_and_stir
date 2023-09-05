@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((36#${WATER} + 36#${STIR})) | tr '0-9a-z' 'a-z0-9'
+echo "$WATER$STIR" | tr 'ewat' '0123' | awk '{printf "%x\n", $1}''
