@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$WATER$STIR" | tr 'ewat' '0123' | awk '{printf "%x\n", $1}''
+python -c "print(int('$WATER', 36) + int('$STIR', 36))"
